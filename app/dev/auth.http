@@ -1,0 +1,52 @@
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+    "name": "Ken Tsunekawa",
+    "email": "fff@k-tsunekawa.com",
+    "password": "05121048",
+    "password_confirmation": "05121048"
+}
+
+###
+
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "email": "info@k-tsunekawa.com",
+    "password": "00000000"
+}
+
+###
+GET http://localhost:8000/api/home
+
+###
+GET http://localhost:8000/api/home
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTAyMjkxNCwiZXhwIjoxNjE1MDIyOTc0LCJuYmYiOjE2MTUwMjI5MTQsImp0aSI6ImtkNTE2QjhlS1I5VGdVbmgiLCJzdWIiOjIsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.Oe-pppNOdmgjt_mkQuqcKg4jWB-VNbzSSNYDHuulemc
+
+
+###
+POST http://localhost:8000/api/password/email
+Content-Type: application/json
+
+{
+    "email": "info@k-tsunekawa.com"
+}
+
+###
+POST http://localhost:8000/api/password/reset/4d63cc3dc8946d50dd92afb45db9b4df86c62f1d21ba5b15283ae77de5b8e854
+Content-Type: application/json
+
+{
+    "token": "4d63cc3dc8946d50dd92afb45db9b4df86c62f1d21ba5b15283ae77de5b8e854",
+    "email": "info@k-tsunekawa.com",
+    "password": "00000000",
+    "password_confirmation": "00000000"
+}
+
+
+
+###
+GET http://localhost:8000/api/email/verify/7?expires=1615019899&signature=b6a09cf7a34fed62e4144ac59d1544a0897aed9826c9f065a4e60e157e3bfcdb
+

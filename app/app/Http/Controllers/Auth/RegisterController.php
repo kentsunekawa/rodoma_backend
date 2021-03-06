@@ -8,6 +8,9 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Auth\Events\Registered;
 
 class RegisterController extends Controller
 {
@@ -69,5 +72,19 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    public function register(Request $request)
+    {
+        $validate = $this->validator($request->all());
+
+        if($validate->fails()) {
+            return new JsonResponse($validate->errors());
+        }
+
+        $user = $this->create($request->all());
+        event(new Registered($user));
+
+        return new JsonResponse($user);
     }
 }
