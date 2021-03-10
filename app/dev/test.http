@@ -1,0 +1,8 @@
+GET http://localhost:8000/api/sns
+
+###
+GET http://localhost:8000/api/profiles
+
+###
+
+GET http://localhost:8000/api/users

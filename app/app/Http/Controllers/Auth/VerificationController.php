@@ -7,7 +7,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\VerifiesEmails;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Verified;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\JsonResponse;
 
 class VerificationController extends Controller

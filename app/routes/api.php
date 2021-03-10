@@ -25,6 +25,10 @@ Route::group(['middleware' => 'api'], function() {
     Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
     Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
+    Route::get('/sns', 'ApiController@sns');
+    Route::get('/profiles', 'ApiController@profiles');
+    Route::get('/users', 'ApiController@users');
+
     Route::group(['middleware' => ['jwt.auth']], function() {
        Route::get('/home', 'ApiController@index');
     });

@@ -2,10 +2,10 @@ POST http://localhost:8000/api/register
 Content-Type: application/json
 
 {
-    "name": "Ken Tsunekawa",
-    "email": "fff@k-tsunekawa.com",
-    "password": "05121048",
-    "password_confirmation": "05121048"
+    "name": "ddd ddddddd",
+    "email": "ddd@ddddddd.com",
+    "password": "dddddddd",
+    "password_confirmation": "dddddddd"
 }
 
 ###
@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
     "email": "info@k-tsunekawa.com",
-    "password": "00000000"
+    "password": "05121048"
 }
 
 ###
@@ -23,7 +23,7 @@ GET http://localhost:8000/api/home
 
 ###
 GET http://localhost:8000/api/home
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTAyMjkxNCwiZXhwIjoxNjE1MDIyOTc0LCJuYmYiOjE2MTUwMjI5MTQsImp0aSI6ImtkNTE2QjhlS1I5VGdVbmgiLCJzdWIiOjIsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.Oe-pppNOdmgjt_mkQuqcKg4jWB-VNbzSSNYDHuulemc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTM4MjQ3OSwiZXhwIjoxNjE1NDAwNDc5LCJuYmYiOjE2MTUzODI0NzksImp0aSI6IjJOQUNyZVR3SWFDZXRvVmYiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Cznh0uK4Asck14t6EGdgLXylw_YqHUxvMr6sPrHxqg8
 
 
 ###
@@ -50,3 +50,4 @@ Content-Type: application/json
 ###
 GET http://localhost:8000/api/email/verify/7?expires=1615019899&signature=b6a09cf7a34fed62e4144ac59d1544a0897aed9826c9f065a4e60e157e3bfcdb
 
+http://localhost:3000/verify?queryUrl=http%3A%2F%2Flocalhost%3A8000%2Fapi%2Femail%2Fverify%2F1%3Fexpires%3D1615382849%26signature%3Db3d35d01a2d30c600e4ef1a0532dc2622517e9aea18c7105b8b4f7abf332a4ac
