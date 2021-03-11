@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
     "email": "info@k-tsunekawa.com",
-    "password": "05121048"
+    "password": "password"
 }
 
 ###
@@ -23,7 +23,7 @@ GET http://localhost:8000/api/home
 
 ###
 GET http://localhost:8000/api/home
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTM4MjQ3OSwiZXhwIjoxNjE1NDAwNDc5LCJuYmYiOjE2MTUzODI0NzksImp0aSI6IjJOQUNyZVR3SWFDZXRvVmYiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Cznh0uK4Asck14t6EGdgLXylw_YqHUxvMr6sPrHxqg8
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTQ1OTE3MCwiZXhwIjoxNjE1NDc3MTcwLCJuYmYiOjE2MTU0NTkxNzAsImp0aSI6IkQxalJhYkZKRmNubGpzdDIiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.LZIhVv9Z9_isgigvSVAO5-HAAwkstuIQOrRks4oOFBI
 
 
 ###

@@ -17,7 +17,6 @@ class CreateRelationsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('follower_id');
             $table->integer('followed_id');
-            $table->timestamps();
         });
     }
 

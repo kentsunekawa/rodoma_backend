@@ -57,4 +57,28 @@ class User extends Authenticatable implements JWTSubject, MustVerifyEmail
     public function sendEmailVerificationNotification() {
         $this->notify(new VerifyEmail);
     }
+
+    public function profile() {
+        return $this->hasOne('App\Models\Profile');
+    }
+
+    public function sns() {
+        return $this->hasManyThrough('App\Models\Sns', 'App\Models\Profile');
+    }
+
+    public function followings() {
+        return $this->belongsToMany('App\Models\User', 'relations', 'follower_id', 'followed_id');
+    }
+
+    public function followers() {
+        return $this->belongsToMany('App\Models\User', 'relations', 'followed_id', 'follower_id');
+    }
+
+    public function getIconData() {
+        return [
+            'name' => $this->name,
+            'icon_url' => $this->icon_url,
+        ];
+        // return $this->name;
+    }
 }

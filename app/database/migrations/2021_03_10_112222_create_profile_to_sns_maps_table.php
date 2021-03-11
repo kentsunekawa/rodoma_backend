@@ -18,7 +18,6 @@ class CreateProfileToSnsMapsTable extends Migration
             $table->integer('profile_id');
             $table->integer('sns_id');
             $table->string('url');
-            $table->timestamps();
         });
     }
 

@@ -18,7 +18,6 @@ class CreateProfilesTable extends Migration
             $table->integer('user_id');
             $table->integer('category_id');
             $table->integer('specialty_id');
-            $table->string('icon_url');
             $table->string('catch_copy');
             $table->string('description');
             $table->timestamps();

@@ -27,7 +27,20 @@ Route::group(['middleware' => 'api'], function() {
 
     Route::get('/sns', 'ApiController@sns');
     Route::get('/profiles', 'ApiController@profiles');
-    Route::get('/users', 'ApiController@users');
+    Route::post('/users', 'ApiController@users');
+    Route::get('/users/{id}', 'ApiController@userWithProfile');
+    Route::get('/posts', 'ApiController@posts');
+    Route::get('/posts/{id}', 'ApiController@post');
+    Route::get('/relations/{id}', 'ApiController@relations');
+    Route::get('/followers/{id}', 'ApiController@followers');
+    Route::get('/followings/{id}', 'ApiController@followings');
+
+    Route::get('/categories', 'ApiController@categories');
+    Route::get('/specialties', 'ApiController@specialties');
+    Route::get('/categoryTree', 'ApiController@categoryTree');
+
+    Route::get('/comments/{postId}', 'ApiController@getCommentsByPostId');
+    Route::get('/icon/{id}', 'ApiController@getIconByUserId');
 
     Route::group(['middleware' => ['jwt.auth']], function() {
        Route::get('/home', 'ApiController@index');

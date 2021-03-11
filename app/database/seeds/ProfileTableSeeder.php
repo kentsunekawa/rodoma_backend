@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class ProfileTableSeeder extends Seeder
 {
@@ -16,41 +17,46 @@ class ProfileTableSeeder extends Seeder
                 'user_id' => 1,
                 'category_id' => 2,
                 'specialty_id' => 2,
-                'icon_url' => '/icon/user1.jpg',
                 'catch_copy' => 'BEYOND Must Be Beautiful',
                 'description' => 'Hi, I am Ken Tsunekawa.',
+                'created_at' => new DateTime('now'),
+                'updated_at' => new DateTime('now'),
             ],
             [
                 'user_id' => 2,
                 'category_id' => 3,
                 'specialty_id' => 9,
-                'icon_url' => '/icon/user2.jpg',
                 'catch_copy' => 'For Beautiful Human Life.',
                 'description' => 'Hi, I am aaa aaaaaaa.',
+                'created_at' => new DateTime('now'),
+                'updated_at' => new DateTime('now'),
             ],
             [
                 'user_id' => 3,
                 'category_id' => 4,
                 'specialty_id' => 15,
-                'icon_url' => '/icon/user3.jpg',
                 'catch_copy' => 'Inspire the Next.',
                 'description' => 'Hi, I am bbb bbbbbbb.',
+                'created_at' => new DateTime('now'),
+                'updated_at' => new DateTime('now'),
             ],
             [
                 'user_id' => 4,
                 'category_id' => 5,
                 'specialty_id' => 17,
-                'icon_url' => '/icon/user4.jpg',
                 'catch_copy' => 'JUST DO IT.',
                 'description' => 'Hi, I am ccc ccccccc.',
+                'created_at' => new DateTime('now'),
+                'updated_at' => new DateTime('now'),
             ],
             [
                 'user_id' => 5,
                 'category_id' => 6,
                 'specialty_id' => 24,
-                'icon_url' => '/icon/user5.jpg',
                 'catch_copy' => 'For Beautiful Human Life.',
                 'description' => 'Hi, I am aaa aaaaaaa.',
+                'created_at' => new DateTime('now'),
+                'updated_at' => new DateTime('now'),
             ],
         ];
         foreach($profiles as $profile) {
